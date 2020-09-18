@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FBN application test suite]">
+  <listeners>
+    <listener class-name="com.crm.qa.extentreportlistner.ExtentReportListener"/>
+    <listener class-name="com.crm.qa.analyzer.RetryRunner"/>
+  </listeners>
+  <test thread-count="5" name="FBN application test suite test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.qa.testcases.LoginPageTestCases">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="teadDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.LoginPageTestCases -->
+    </classes>
+  </test> <!-- FBN application test suite test(failed) -->
+</suite> <!-- Failed suite [FBN application test suite] -->
